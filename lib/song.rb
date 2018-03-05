@@ -29,4 +29,8 @@ class Song
     created
   end
 
+  def self.find_by_name(name)
+    Person.all.detect{|p| p.name == name}
+  end
+
 end
