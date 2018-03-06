@@ -41,8 +41,11 @@ class Song
  end
 
    def self.alphabetical
-     @@all.map{|song| song.name}.sort.map{|sorted| self.find_or_create_by_name(sorted)}
+    #  @@all.map{|song| song.name}.sort.map{|sorted| self.find_or_create_by_name(sorted)}
+    @@all.sort_by {|song| song.name}
    end
+
+   def self.new_from_filename()
 
 
 
