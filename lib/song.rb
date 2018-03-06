@@ -60,6 +60,10 @@ class Song
      created
    end
 
+   def self.destroy_all
+     @@all.clear
+   end
+
 
 
 
