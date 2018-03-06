@@ -42,7 +42,7 @@ class Song
    def self.alphabetical
      @@all.name.sort
    end
-   
+
   end
 
 
