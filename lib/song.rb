@@ -41,10 +41,10 @@ class Song
  end
 
    def self.alphabetical
-     @@all.name.sort
+     @@all.map{|song| song.name}.sort
    end
 
-  
+
 
 
 end
